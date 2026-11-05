@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swetha Derangula | Data Science & Machine Learning Portfolio</title>
+  <meta name="description" content="Portfolio of Swetha Derangula - B.Tech CSE Student, Machine Learning & Data Science Enthusiast, Python & SQL Developer.">
+  <meta name="keywords" content="Swetha Derangula, Data Science, Machine Learning, Python, SQL, Portfolio, Flask, AI Projects">
+  <meta name="author" content="Swetha Derangula">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%22 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Background Glow & Grid Canvas -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-container" id="navbar">
+    <nav class="navbar">
+      <a href="#hero" class="nav-logo">
+        <img src="profile.jpg" alt="Swetha Derangula" class="nav-logo-img">
+        <span class="logo-name">Swetha<span>.D</span></span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link nav-link-contact">Contact Me</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Download CTA -->
+        <a href="resume.pdf" download="Swetha_Derangula_Resume.pdf" class="btn btn-outline nav-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-indicator"></span>
+            <span>Open for SDE & Data Science Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Swetha Derangula</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="static-txt">Passionate about</span>
+            <span class="dynamic-txt" id="typewriterText">Machine Learning</span>
+            <span class="cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Final year B.Tech (Computer Science) student specializing in <strong>Data Science, Machine Learning, and Full-Stack Python</strong>. Experienced in building end-to-end ML models, deploying web applications with Flask, and solving complex algorithmic challenges.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Social Links Quick Bar -->
+          <div class="hero-social-links">
+            <a href="https://linkedin.com/in/swetha-derangula-46b1ab302/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Swetha60" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:swethaderangula60@gmail.com" class="social-icon" aria-label="Send Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email</span>
+            </a>
+            <div class="location-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Proddatur, AP, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Stats Cards Floating -->
+        <div class="hero-visual">
+          <div class="profile-card-glass">
+            <div class="avatar-ring">
+              <img src="profile.jpg" alt="Swetha Derangula - Data Science & Machine Learning" class="avatar-img">
+            </div>
+
+            <div class="profile-card-info">
+              <h3>Swetha Derangula</h3>
+              <p>Software & ML Engineer</p>
+              <div class="badge-row">
+                <span class="chip">Python</span>
+                <span class="chip">Machine Learning</span>
+                <span class="chip">SQL</span>
+                <span class="chip">Flask</span>
+              </div>
+            </div>
+
+            <!-- Mini metrics grid -->
+            <div class="metric-tiles">
+              <div class="metric-tile">
+                <span class="metric-value">8.4</span>
+                <span class="metric-label">B.Tech CGPA</span>
+              </div>
+              <div class="metric-tile">
+                <span class="metric-value">100+</span>
+                <span class="metric-label">LeetCode DSA</span>
+              </div>
+              <div class="metric-tile">
+                <span class="metric-value">2+</span>
+                <span class="metric-label">Internships</span>
+              </div>
+              <div class="metric-tile">
+                <span class="metric-value">100%</span>
+                <span class="metric-label">Commitment</span>
+              </div>
+            </div>
+
+            <div class="glass-card-footer">
+              <a href="https://aihousepriceprediction-qlyjxy5ab.vercel.app" target="_blank" rel="noopener noreferrer" class="live-demo-pill">
+                <span class="pulse-dot"></span>
+                <span>Live Project: AI House Predictor</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Data, Inspired by Code</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-main">
+            <h3>Professional Summary</h3>
+            <p>
+              I am a final-year <strong>B.Tech Computer Science and Engineering</strong> student passionate about the synergy between Data Science and Software Engineering. With a solid foundation in mathematics, algorithms, and practical programming, I build end-to-end applications that transform raw data into actionable predictive insights.
+            </p>
+            <p>
+              My expertise covers exploratory data analysis (EDA), statistical modeling, supervised and unsupervised machine learning algorithms (Regression, Classification, Clustering), dimensionality reduction, and modern web application development using <strong>Flask, HTML5, CSS3, and JavaScript</strong>.
+            </p>
+            <p>
+              I take pride in writing clean, scalable code and continuously elevating my analytical thinking by solving complex Data Structures & Algorithms challenges. I am actively seeking exciting software engineering and data science roles where I can contribute to impactful software solutions.
+            </p>
+
+            <div class="about-highlights-list">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                </div>
+                <div>
+                  <strong>End-to-End ML Pipelines:</strong> Data preprocessing, feature scaling, model training, evaluation & deployment.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                </div>
+                <div>
+                  <strong>Full Stack Integration:</strong> Connecting machine learning algorithms to responsive web interfaces using Flask.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                </div>
+                <div>
+                  <strong>Problem-Solving Mindset:</strong> 100+ LeetCode problems cracked with algorithmic precision.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Info Cards -->
+          <div class="about-side-cards">
+            <div class="about-photo-card glass-card">
+              <div class="about-photo-wrapper">
+                <img src="profile.jpg" alt="Swetha Derangula - Professional Portrait" class="about-photo-img">
+              </div>
+              <div class="about-photo-details">
+                <h4>Swetha Derangula</h4>
+                <p>Data Science & Machine Learning Engineer</p>
+                <div class="status-pill"><span class="status-indicator"></span> Open for Full-Time & SDE Roles</div>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">📍</span>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-val">Proddatur, Andhra Pradesh, India</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">🎓</span>
+              <div>
+                <span class="info-label">Degree</span>
+                <span class="info-val">B.Tech CSE (Expected 2027)</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">💼</span>
+              <div>
+                <span class="info-label">Availability</span>
+                <span class="info-val highlight-green">Immediate / Intern / Full-Time</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">✉️</span>
+              <div>
+                <span class="info-label">Email</span>
+                <a href="mailto:swethaderangula60@gmail.com" class="info-val link">swethaderangula60@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">📞</span>
+              <div>
+                <span class="info-label">Phone</span>
+                <a href="tel:+919177992184" class="info-val link">+91 9177992184</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Proficiencies cultivated through real-world projects, internships, and coursework.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-group-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-pill">
+                <span class="pill-dot python"></span>
+                <span>Python</span>
+                <span class="pill-badge">Primary</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot sql"></span>
+                <span>SQL</span>
+                <span class="pill-badge">Database</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot java"></span>
+                <span>Java</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot c"></span>
+                <span>C</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Machine Learning & Data Science -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-group-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <h3>ML & Data Science</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-pill">
+                <span class="pill-dot ml"></span>
+                <span>Scikit-Learn</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot ml"></span>
+                <span>Regression & Classification</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot ml"></span>
+                <span>Clustering</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot ml"></span>
+                <span>Dimensionality Reduction</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot ml"></span>
+                <span>Data Preprocessing</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot ml"></span>
+                <span>Feature Scaling</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot ml"></span>
+                <span>Matplotlib & Visualization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-group-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <h3>Web & Backend</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-pill">
+                <span class="pill-dot web"></span>
+                <span>Flask</span>
+                <span class="pill-badge">Backend</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot web"></span>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot web"></span>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot web"></span>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot web"></span>
+                <span>REST API Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-group-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3>Tools & Environments</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-pill">
+                <span class="pill-dot tools"></span>
+                <span>Jupyter Notebook</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot tools"></span>
+                <span>VS Code</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot tools"></span>
+                <span>Google Colab</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot tools"></span>
+                <span>Git & GitHub</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot tools"></span>
+                <span>Vercel Deployment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & INTERNSHIPS SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title">Internship Experience</h2>
+          <p class="section-subtitle">Hands-on practical industry exposure in Data Science and Artificial Intelligence.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Experience Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="role-title">Data Science Intern</h3>
+                  <div class="company-name">Edutech Solutions</div>
+                </div>
+                <div class="timeline-date">April 2026 – May 2026</div>
+              </div>
+              <p class="timeline-desc">
+                Contributed to multiple machine learning pipelines covering regression, classification, clustering, and high-dimensional dataset optimizations.
+              </p>
+              <ul class="task-list">
+                <li>Designed, trained, and evaluated machine learning models for predictive analysis across diverse datasets.</li>
+                <li>Applied dimensionality reduction techniques (PCA, feature extraction) to enhance training speeds and reduce multicollinearity.</li>
+                <li>Conducted rigorous hyperparameter tuning and model cross-validation to minimize overfitting and maximize predictive accuracy.</li>
+              </ul>
+              <div class="tech-stack-row">
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Regression</span>
+                <span class="tech-tag">Classification</span>
+                <span class="tech-tag">Clustering</span>
+                <span class="tech-tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="role-title">Artificial Intelligence Intern</h3>
+                  <div class="company-name">SkillDzire</div>
+                </div>
+                <div class="timeline-date">May 2025 – June 2025</div>
+              </div>
+              <p class="timeline-desc">
+                Gained intensive practical experience working on canonical and healthcare real-world datasets including the Iris Dataset and Breast Cancer Detection.
+              </p>
+              <ul class="task-list">
+                <li>Executed end-to-end data cleaning, handling missing values, outlier detection, and feature transformation.</li>
+                <li>Created intuitive exploratory data visualizations and correlation matrices using Matplotlib and related charting libraries.</li>
+                <li>Built binary classification models for medical diagnosis support (Breast Cancer Detection) with high sensitivity and specificity.</li>
+              </ul>
+              <div class="tech-stack-row">
+                <span class="tech-tag">Artificial Intelligence</span>
+                <span class="tech-tag">Data Cleaning</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Data Visualization</span>
+                <span class="tech-tag">Healthcare ML</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects & Applications</h2>
+          <p class="section-subtitle">Real-world AI and Machine Learning applications with deployed demos and open-source code.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: AI House Price Prediction -->
+          <div class="project-card featured">
+            <div class="project-badge">Live Deployed Demo</div>
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Swetha60/AI-House-Price-Prediction" target="_blank" rel="noopener noreferrer" class="icon-btn" title="View Source on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+                <a href="https://aihousepriceprediction-qlyjxy5ab.vercel.app" target="_blank" rel="noopener noreferrer" class="icon-btn live" title="Open Live Web Application">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">AI House Price Prediction</h3>
+            <p class="project-desc">
+              An interactive, end-to-end Machine Learning web application that predicts property valuations based on real estate parameters such as location, square footage, bedrooms, and amenities.
+            </p>
+
+            <div class="project-features">
+              <div class="pf-item">
+                <span class="pf-check">✓</span>
+                <span>Trained multi-variable regression models on extensive real estate datasets.</span>
+              </div>
+              <div class="pf-item">
+                <span class="pf-check">✓</span>
+                <span>Rigorous data preprocessing, standard feature scaling & model evaluation metrics (RMSE, R²).</span>
+              </div>
+              <div class="pf-item">
+                <span class="pf-check">✓</span>
+                <span>Fully deployed with a modern, responsive web UI hosted on Vercel.</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span>Flask</span>
+              <span>Python</span>
+              <span>Scikit-learn</span>
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>Vercel</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://aihousepriceprediction-qlyjxy5ab.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <span>View Live Demo</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://github.com/Swetha60/AI-House-Price-Prediction" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <span>GitHub Code</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: AI Salary Prediction Web App -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Swetha60/AI-Salary-Prediction" target="_blank" rel="noopener noreferrer" class="icon-btn" title="View Source on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">AI Salary Prediction Web App</h3>
+            <p class="project-desc">
+              A comprehensive machine learning web system designed to estimate employee compensation packages accurately based on technical job role, industry experience, skill set, and educational background.
+            </p>
+
+            <div class="project-features">
+              <div class="pf-item">
+                <span class="pf-check">✓</span>
+                <span>Engineered robust regression pipeline in Scikit-Learn to model salary distributions.</span>
+              </div>
+              <div class="pf-item">
+                <span class="pf-check">✓</span>
+                <span>Constructed clean, responsive web user interface enabling real-time inference.</span>
+              </div>
+              <div class="pf-item">
+                <span class="pf-check">✓</span>
+                <span>Flask REST backend serving inference requests with low latency.</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span>Flask</span>
+              <span>Python</span>
+              <span>Scikit-learn</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/Swetha60/AI-Salary-Prediction" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <span>View GitHub Repository</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education & Qualifications</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-cards">
+          <!-- B.Tech -->
+          <div class="edu-card highlighted">
+            <div class="edu-badge">Undergraduate</div>
+            <div class="edu-header">
+              <h3>B.Tech in Computer Science and Engineering</h3>
+              <span class="edu-years">Expected: 2027</span>
+            </div>
+            <div class="edu-institution">YSR Engineering College</div>
+            <div class="edu-score-wrapper">
+              <span class="score-label">Cumulative GPA:</span>
+              <span class="score-val">8.4 / 10.0</span>
+            </div>
+            <p class="edu-notes">
+              Focus on Algorithms, Data Structures, Operating Systems, Database Management Systems, Machine Learning, and Software Engineering principles.
+            </p>
+          </div>
+
+          <!-- Intermediate -->
+          <div class="edu-card">
+            <div class="edu-badge">Higher Secondary</div>
+            <div class="edu-header">
+              <h3>Intermediate (MPC)</h3>
+              <span class="edu-years">2021 – 2023</span>
+            </div>
+            <div class="edu-institution">Govt. Junior College</div>
+            <div class="edu-score-wrapper">
+              <span class="score-label">Percentage:</span>
+              <span class="score-val">91%</span>
+            </div>
+            <p class="edu-notes">
+              Core subjects: Mathematics, Physics, and Chemistry. Developed strong mathematical and analytical problem-solving foundation.
+            </p>
+          </div>
+
+          <!-- SSC -->
+          <div class="edu-card">
+            <div class="edu-badge">Secondary School</div>
+            <div class="edu-header">
+              <h3>Secondary School Certificate (SSC)</h3>
+              <span class="edu-years">2021</span>
+            </div>
+            <div class="edu-institution">Khadri E.M High School</div>
+            <div class="edu-score-wrapper">
+              <span class="score-label">Percentage:</span>
+              <span class="score-val">98%</span>
+            </div>
+            <p class="edu-notes">
+              Graduated with top academic honors, demonstrating exceptional dedication to foundational sciences and mathematics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Milestones</span>
+          <h2 class="section-title">Honors & Achievements</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="achieve-grid">
+          <div class="achieve-card">
+            <div class="achieve-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+            </div>
+            <div class="achieve-details">
+              <div class="achieve-counter">100+</div>
+              <h3>LeetCode DSA Problems Solved</h3>
+              <p>Consistently practicing Data Structures & Algorithms, including Arrays, Strings, Trees, Graphs, Dynamic Programming, and Binary Search to maintain sharp problem-solving dexterity.</p>
+            </div>
+          </div>
+
+          <div class="achieve-card">
+            <div class="achieve-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div class="achieve-details">
+              <div class="achieve-counter">98% & 91%</div>
+              <h3>Exemplary Academic Standing</h3>
+              <p>Consistent high academic performance across Secondary School (98%), Intermediate (91%), and current B.Tech CSE coursework (8.4 CGPA).</p>
+            </div>
+          </div>
+
+          <div class="achieve-card">
+            <div class="achieve-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+            </div>
+            <div class="achieve-details">
+              <div class="achieve-counter">End-to-End</div>
+              <h3>Production Model Deployment</h3>
+              <p>Successfully designed, trained, containerized, and deployed machine learning web apps on cloud platforms with real-time prediction accessibility.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in working together or hiring me for an opportunity? I'd love to hear from you!</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Details Column -->
+          <div class="contact-info-col">
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-desc">
+              Feel free to reach out directly via email, phone, or LinkedIn. I am always open to exploring full-time roles, software engineering internships, and research collaborations.
+            </p>
+
+            <div class="contact-details-list">
+              <!-- Email -->
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-card-body">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:swethaderangula60@gmail.com" class="contact-value link">swethaderangula60@gmail.com</a>
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('swethaderangula60@gmail.com', this)" title="Copy email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-card-body">
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+919177992184" class="contact-value link">+91 9177992184</a>
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('+919177992184', this)" title="Copy phone number">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="contact-card-body">
+                  <span class="contact-label">LinkedIn</span>
+                  <a href="https://linkedin.com/in/swetha-derangula-46b1ab302/" target="_blank" rel="noopener noreferrer" class="contact-value link">in/swetha-derangula-46b1ab302</a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="contact-card-body">
+                  <span class="contact-label">GitHub</span>
+                  <a href="https://github.com/Swetha60" target="_blank" rel="noopener noreferrer" class="contact-value link">github.com/Swetha60</a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-card-body">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Proddatur, Andhra Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-col glass-card">
+            <h3>Send a Message</h3>
+            <p>Write to me directly; this form opens your email client with your message pre-formatted.</p>
+
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="senderEmail">Your Email</label>
+                  <input type="email" id="senderEmail" name="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Opportunity / Project Collaboration" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Hi Swetha, I came across your portfolio and would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn">
+                <span>Send Message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+
+            <div id="formSuccessMessage" class="form-feedback hidden">
+              Message prepared! Opening your mail client to send to <strong>swethaderangula60@gmail.com</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-symbol">&lt;SD/&gt;</span>
+          <span class="logo-name">Swetha<span>.D</span></span>
+        </a>
+        <p class="footer-tagline">Building intelligent models & robust software solutions.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" download="Swetha_Derangula_Resume.pdf">Resume</a>
+      </div>
+
+      <div class="footer-right">
+        <p>&copy; 2026 Swetha Derangula. All rights reserved.</p>
+        <button id="backToTop" class="back-to-top" title="Back to top" aria-label="Scroll back to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast">Copied to clipboard!</div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
